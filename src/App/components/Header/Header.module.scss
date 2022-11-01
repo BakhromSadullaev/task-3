@@ -1,0 +1,64 @@
+@import "../../styles/index.scss";
+.body {
+  background-image: url(../../../../public//headerBanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+
+  nav {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: $space-l $space-xl;
+
+    h2 {
+      color: $redColor;
+      font-size: $fs18;
+    }
+
+    button {
+      padding: $space-xs $space-s;
+      background-color: rgba(89, 89, 89, 0.504);
+      color: $redColor;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  main {
+    color: $whiteColor;
+    width: 80%;
+    margin: auto;
+
+    h1 {
+      font-weight: 200;
+      letter-spacing: 1px;
+    }
+
+    .searchBar {
+      display: flex;
+      gap: $space-m;
+      margin: $space-s 0;
+      input {
+        display: inline-block;
+        width: 60%;
+        padding: $space-xs $space-s;
+        outline: none;
+        background-color: rgba(89, 89, 89, 0.504);
+        border: none;
+        color: $whiteColor;
+      }
+
+      button {
+        padding: 0 $space-m;
+        background-color: $redColor;
+        border: none;
+        cursor: pointer;
+        color: $whiteColor;
+      }
+    }
+  }
+}

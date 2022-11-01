@@ -1,0 +1,68 @@
+@import "../../styles/index.scss";
+
+.body {
+  background-color: $blackColor;
+  color: $whiteColor;
+  padding: $space-l $space-xl;
+
+  .tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $grayColor;
+
+    .categories {
+      padding-left: 0;
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: $space-s;
+        list-style: none;
+        font-size: $fs12;
+
+        li {
+          padding: $space-xxs;
+          cursor: pointer;
+
+          &:hover {
+            color: $redColor;
+          }
+        }
+      }
+    }
+
+    .sort {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: $space-s;
+      font-size: $fs12;
+
+      p {
+        color: $grayColor;
+      }
+
+      select {
+        background: transparent;
+        color: $whiteColor;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .found {
+    margin: $space-l 0;
+    font-size: $fs16;
+  }
+
+  .moviesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: $space-l;
+  }
+}
